@@ -1,6 +1,6 @@
-* {
+ * {
     font-family: "Poppins", sans-serif;
-  }
+  } 
   
   body {
     height: 100vh;
@@ -9,7 +9,8 @@
     align-items: center;
     overflow-y: hidden;
     background-color: antiquewhite;
-  }
+    margin: 0;
+  } 
   
   /* etiqueta de producto */
   .tag {
@@ -20,46 +21,56 @@
     display: flex;
     justify-content: center;
     color: #fff;
-  }
+    margin: 3% 0 4% 0;
+  } 
   
   /* producto */
   .product-title {
     font-size: 2rem;
     font-weight: 700;
-  }
+    margin: 0 0 5% 0;
+  } 
   
   .product-card {
     background: #fff;
-    display: grid;
-    /* align-items: center; */
-    grid-template-rows: 55% 45%;
-    height: 80%;
-    width: 28%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
     box-shadow: 10px 10px 25px 0px #3c3c3c;
   }
   
-  .product-image {
-    /* border: 2px solid black; */
-    background-image: url("../../public/img/blackcar.jpg");
+  .product-image { 
+    background-image: url("../../public/img/blackcar.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40px 10px;
-    width: 28rem;
-    height: 66%;
-  }
+    padding: 20px  10px;
+    height: 100%; 
+    width: 28rem; 
+  
+  } 
   
   .product-description {
     background-color: #62c256;
     color: #fff;
-    padding-left: 20px;
-    margin-top: -67px;
-  }
+    padding: 27px;
+    min-height: fit-content; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
   
   .product-details {
     display: flex;
     flex-direction: column;
     margin-top: -20px;
+  }
+
+  .product-details p{
+    margin: 0; 
   }
   
   .product-image img {
@@ -69,10 +80,10 @@
   .stars {
     color: yellow;
     font-size: 1em;
-  }
+  }  
   
   /* colores */
-  .colors-price {
+    .colors-price {
     display: flex;
     align-items: center;
     width: 70%;
@@ -92,14 +103,14 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-  }
+  } 
   
   .gray {
     background: gray;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-  }
+  } 
   
   .black {
     background: black;
@@ -117,10 +128,10 @@
   
   .old-price {
     font-weight: 100;
-  }
+  } 
   
   /* botones */
-  button {
+    button {
     cursor: pointer;
   }
   
@@ -145,4 +156,6 @@
     padding: 10px 25px;
     border: none;
     border-radius: 5px;
-  }
+  }   
+  
+  
